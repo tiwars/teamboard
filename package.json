@@ -1,0 +1,26 @@
+{
+  "name": "retro-app",
+  "version": "1.0.0",
+  "description": "Team Retro App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tiwars",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "handlebars":"*",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.2",
+    "express-validator": "^3.2.0",
+    "lodash": "^4.17.4",
+    "method-override": "^2.3.8",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.6",
+    "socket.io": "latest"
+  }
+}

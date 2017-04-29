@@ -1,0 +1,19 @@
+{{#if feedback}}
+<ul id="notes">
+	{{#each feedback}}
+	<li><a title="click to copy text-center" >
+	<!--<i class="pin"></i>-->
+	<button title="click to delete" class="btn btn-link deletePost pull-right _{{sessionId}}" onClick="deletePost('{{_id}}')" style="color:red;">x</button>
+	<!--<span class="glyphicon glyphicon-copy"></span>-->
+	{{#compare type "texts"}}
+		<div id="{{_id}}" alt="copy to clipboard" class="{{sessionId}} postit text-center feedback-class" onClick="handleClick('{{_id}}')" data-underline="false" data-url="xedit/{{_id}}">{{breaklines feedback}}</div>
+	{{else}}
+		<span class="user-name text-center" >{{user}}</span>
+		<div id="{{_id}}" alt="copy to clipboard" class="{{sessionId}}  text-center number-class postit" onClick="handleClick('{{_id}}')" data-underline="false" data-url="xedit/{{_id}}">{{feedback}}</div>
+	{{/compare}}
+	</a></li>
+	{{/each}}
+</ul>
+{{else}}
+	<h2 class="text-center"> Your feedback will appear here. </h2>
+{{/if}}
